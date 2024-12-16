@@ -26,7 +26,7 @@ X_train_scaled = scaler.fit_transform(X_train)
 X_test_scaled = scaler.transform(X_test)
 
 # ランダムフォレストモデルのトレーニング
-model = RandomForestRegressor(random_state=42, n_estimators=100)
+model = RandomForestRegressor(random_state=42, n_estimators=10000)
 model.fit(X_train_scaled, y_train)
 
 # テストセットでの予測
