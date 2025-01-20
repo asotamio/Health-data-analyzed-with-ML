@@ -6,6 +6,9 @@ from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.preprocessing import StandardScaler
 import matplotlib.pyplot as plt
 
+import keras
+
+
 # データの読み込み
 file_path = '/Users/tamio/Downloads/oura_2024-10-02_2024-12-08_trends.csv'
 health_data = pd.read_csv(file_path)
